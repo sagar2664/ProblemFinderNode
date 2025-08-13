@@ -1,0 +1,83 @@
+# Keep only backend and frontend directories
+# Ignore everything first, then allow specific directories
+*
+
+# Allow backend directory and its contents
+!backend/
+!backend/**
+
+# Allow frontend directories and their contents
+!frontend/
+!frontend/**
+
+# Allow essential files
+!.gitignore
+!README.md
+!package.json
+!package-lock.json
+
+# Node.js dependencies (ignore in all directories)
+**/node_modules/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/.npm
+**/.yarn-integrity
+
+# Environment variables
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+# Logs
+**/logs
+**/*.log
+
+# Build outputs
+**/build/
+**/dist/
+**/.next/
+**/out/
+
+# IDE and editor files
+**/.vscode/
+**/.idea/
+**/*.swp
+**/*.swo
+**/Thumbs.db
+**/.DS_Store
+
+# AWS and deployment files
+**/.elasticbeanstalk/
+**/aws-logs/
+**/*.pem
+**/*.key
+
+# Temporary files
+**/tmp/
+**/temp/
+**/.cache/
+
+# Coverage and test files
+**/coverage/
+**/.nyc_output
+
+# Python files (if any)
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.Python
+**/pip-log.txt
+**/pip-delete-this-directory.txt
+
+# OS generated files
+**/.DS_Store
+**/.DS_Store?
+**/._*
+**/.Spotlight-V100
+**/.Trashes
+**/ehthumbs.db
+**/Thumbs.db
