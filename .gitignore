@@ -1,14 +1,5 @@
 # Keep only backend and frontend directories
 # Ignore everything first, then allow specific directories
-*
-
-# Allow backend directory and its contents
-!backend/
-!backend/**
-
-# Allow frontend directories and their contents
-!frontend/
-!frontend/**
 
 # Allow essential files
 !.gitignore
